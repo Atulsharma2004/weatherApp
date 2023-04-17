@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> headerlinks}}
+</head>
+
+<body>
+    {{> navbar}}
+
+    <!-- ----------main header----------------- -->
+    <div class="container main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form action="" class="temp_form">
+                        <input type="text" id="cityname" placeholder="Enter Your City Name..." autocomplete="of" >
+                        <input type="submit" value="search" id="submitbtn">
+                    </form>
+                </div>
+
+                <div class="temp_info">
+                    <div class="top_layer">
+                        <p id="day"></p>
+                        <p id="date"></p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">Get Output</p>
+                        <div class="midd_layer data_hide">
+                            <p id="temp"><span id="temp_real_val">0</span><sup>o</sup>C</p>
+                            <p id="temp_status"><i class="fa-solid fa-cloud"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------- footer code ------------ -->
+
+    {{> footer}}
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{> headerlinks}}
+</head>
+
+<body>
+    {{> navbar}}
+
+    <!-- ----------main header----------------- -->
+    <div class="container main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- -----left side div------ -->
+                    <div class="col-md-6 col-12 left_header">
+                        <p>Welcome to weather app</p>
+                        <h1>Get The Latest <span>Weather</span> Info Of Your City</h1>
+                        <a href="/weather"><button>Check Now</button></a>
+                    </div>
+
+                    <!-- -----right side div------ -->
+                    <div class="col-md-6 col-12 right_header">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/side13.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/slid4.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/slid2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------- footer code ------------ -->
+
+    {{> footer}}
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
