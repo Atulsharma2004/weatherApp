@@ -5,6 +5,8 @@ const temp_real_val =document.getElementById('temp_real_val');
 const temp_status=document.getElementById('temp_status');
 const datahide=document.querySelector(".midd_layer");
 
+const apikey="";
+
 var d=new Date();
 const day=document.getElementById('day');
 const date=document.getElementById('date');
@@ -24,7 +26,7 @@ const getInfo= async(event)=>{
     }
     else{
         try{
-        let url=`http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=f3922e14b24f0f182678b00224733433`;
+        let url=`http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=${apikey}`;
         const response= await fetch(url);
         // console.log(response);
         const data=await response.json();
